@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+main{
+    width: 100vw;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    max-width: 335px;
+    margin: 5em 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.policy{
+    width: 100%;
+    padding: 1em;
+    background-color: white;
+}
+.policy h1{
+    color: hsl(179, 62%, 43%);
+    margin: 1em 0;
+}
+.policy h2{
+    color: hsl(71, 73%, 54%);
+    font-weight: 400;
+    font-size: large;
+    margin: 1em 0;
+}
+.policy p{
+    color: hsl(218, 22%, 67%);
+}
+.subscription{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 1em;
+}
+.subscription h2{
+    padding: 0 0 0.5em 0;
+    font-weight: 400;
+}
+.subscription h2:nth-child(2){
+    font-weight: 700;
+}
+span{
+    color:hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: small;
+    padding: 0 0.5em;
+    vertical-align: middle;
+}
+.subscription p{
+    font-weight: 400;
+}
+button{
+    padding: 1em;
+    margin: 1em auto;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+}
+.why-us{
+    background-color: #30B5F2;
+    color: white;
+    padding: 1em;
+}
+.why-us h2{
+    padding: 0.5em 0;
+    font-weight: 400;
+    font-size: x-large;
+}
+@media screen and (min-width: 600px){
+    .container{
+        max-width: 600px;
+    }
+    .wrapper{
+        display: flex;
+    }
+    .subscription{
+        width: 50%;
+    }
+    .why-us{
+        width: 50%;
+    }
+}
